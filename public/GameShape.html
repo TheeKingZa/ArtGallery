@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Game</title>
+    <link rel="stylesheet" type="text/css" href="gamestyle.css">
+</head>
+<body>
+
+<header>Shape Game</header>
+<div class="instructions">
+    Click on the correct shape:
+<hr/>
+    <center><div id="expected-shape"></div></center>
+</div>
+
+<div class="shape-container">
+    <div class="shape" id="square" onclick="checkShape('square')"></div>
+    <div class="shape" id="circle" onclick="checkShape('circle')"></div>
+    <div class="shape" id="triangle" onclick="checkShape('triangle')"></div>
+</div>
+
+<p id="result"></p>
+
+<script src="gameScript.js"></script>
+
+</body>
+</html>
